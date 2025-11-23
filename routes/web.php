@@ -3,22 +3,18 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Site\SiteController;
 
-<<<<<<< HEAD
 Route::get('/', [SiteController::class, 'index'])->name('home.index');
 
-=======
 Route::get('/', function () {
     return view('site.home');
 });
 
 Route::get('/home', [SiteController::class, 'index'])->name('home');
->>>>>>> 5e085fd831cde74431a314b458a49ae861b2b87c
 Route::get('/layanan', [SiteController::class, 'layanan'])->name('layanan');
 Route::get('/struktur', [SiteController::class, 'struktur'])->name('struktur');
 Route::get('/login', [SiteController::class, 'login'])->name('login');
 Route::get('/visi', [SiteController::class, 'visi'])->name('visi');
 Route::get('/cek-koneksi', [SiteController::class, 'cekKoneksi'])->name('site.cek-koneksi');
-<<<<<<< HEAD
 
 Auth::routes();
 
@@ -48,7 +44,7 @@ Route::group(['middleware' => 'isResepsionis'], function() {
 Route::group(['middleware' => 'isPemilik'], function() {
     Route::get('/pemilik/dashboard-pemilik', [App\Http\Controllers\Pemilik\DashboardPemilikController::class, 'index'])->name('pemilik.dashboard');
 });
-=======
+
 Route::get('/admin/jenis-hewan', [App\Http\Controllers\Admin\JenisHewanController::class, 'index'])->name('admin.jenis-hewan.index');
 Route::get('/admin/pemilik', [App\Http\Controllers\Admin\PemilikController::class, 'index'])->name('admin.pemilik.index');
 Route::get('/admin/ras-hewan', [App\Http\Controllers\Admin\RasHewanController::class, 'index'])->name('admin.ras-hewan.index');
@@ -60,4 +56,3 @@ Route::get('/admin/role', [App\Http\Controllers\Admin\RoleController::class, 'in
 Route::get('/admin/user-role', [App\Http\Controllers\Admin\UserRoleController::class, 'index'])->name('admin.user-role.index');
 
 
->>>>>>> 5e085fd831cde74431a314b458a49ae861b2b87c
