@@ -1,0 +1,426 @@
+/* --- BODY --- */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* --- NAVBAR --- */
+nav {
+    background: #004080;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center; /* agar menu di tengah */
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+    color: #e6f2ff;
+}
+
+/* --- CONTENT AREA --- */
+.content {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* --- TYPOGRAPHY --- */
+h1, h2, h3 {
+    text-align: center;
+    color: #004080;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* --- FORM (LOGIN PAGE) --- */
+.form-container {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 450px;
+    margin: 50px auto;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #0056b3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
+}
+
+.form-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #004080;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+/* --- SECTION LAYANAN --- */
+#layanan {
+    background-color: #f9fbff;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+}
+
+#layanan h2 {
+    color: #004080;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+#layanan p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #444;
+}
+
+#layanan ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    margin: 1.5rem auto;
+    max-width: 600px;
+    color: #333;
+}
+
+#layanan ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Link di dalam section */
+#layanan a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#layanan a:hover {
+    color: #003366;
+    text-decoration: underline;
+}
+/* --- SECTION VISI, MISI, TUJUAN --- */
+#visi {
+    background-color: #f9fbff;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    max-width: 900px;
+    text-align: center;
+}
+
+#visi h2 {
+    color: #004080;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+#visi h3 {
+    color: #0056b3;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.3rem;
+}
+
+#visi p {
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+#visi ol {
+    text-align: left;
+    display: inline-block;
+    margin: 0 auto 1rem;
+    padding-left: 1.5rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+#visi ol li {
+    margin-bottom: 0.5rem;
+}
+
+/* Gambar di tengah dengan efek lembut */
+.visi-image {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.visi-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+/* --- SECTION STRUKTUR ORGANISASI --- */
+#struktur {
+    background-color: #f9fbff;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    max-width: 900px;
+    text-align: center;
+}
+
+#struktur h2 {
+    color: #004080;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+/* --- TABEL STRUKTUR --- */
+.tabel-struktur {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+.tabel-struktur th {
+    background-color: #cfe2ff;
+    color: #003366;
+    padding: 1rem;
+    font-size: 1.05rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tabel-struktur td {
+    padding: 1rem;
+    border-top: 1px solid #e0e0e0;
+    color: #333;
+}
+
+/* Warna baris bergantian biar lembut */
+.tabel-struktur tbody:nth-of-type(odd) {
+    background-color: #f5f9ff;
+}
+
+.tabel-struktur tbody:nth-of-type(even) {
+    background-color: #e9f2ff;
+}
+
+/* Efek hover */
+.tabel-struktur tr:hover td {
+    background-color: #dbeafe;
+    transition: 0.3s ease;
+}
+
+/* *--- TABEL JENIS HEWAN---*/
+.tabel-jenis-hewan {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+.tabel-jenis-hewan th {
+    background: #c8dfff;
+    color: #004080;
+    padding: 1rem;
+    text-align: center;
+}
+.tabel-jenis-hewan td {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+.tabel-jenis-hewan tr:hover td {
+    background-color: #f0f6ff;
+}
+<<<<<<< HEAD
+.logout-link, .logout-btn {
+    color: #fff !important;
+}
+.master-nav-box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.master-menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.master-menu-list li {
+    margin-bottom: 1rem;
+}
+.master-menu-list a {
+    background: #004080;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    transition: background 0.2s;
+}
+.master-menu-list a:hover {
+    background: #0056b3;
+}
+.btn.btn-secondary {
+    background: #cfe2ff;
+    color: #004080;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: background 0.2s;
+}
+.btn.btn-secondary:hover {
+    background: #90c0f7;
+    color: #002e5c;
+}
+/* --- Kotak Navigasi (Data Master style) --- */
+.master-nav-box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.master-menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.master-menu-list li {
+    margin-bottom: 1rem;
+}
+.master-menu-list a {
+    background: #004080;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    transition: background 0.2s;
+}
+.master-menu-list a:hover {
+    background: #0056b3;
+}
+
+/* --- Tombol Kembali --- */
+.btn.btn-secondary {
+    background: #cfe2ff;
+    color: #004080;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: background 0.2s;
+    display: inline-block;
+}
+.btn.btn-secondary:hover {
+    background: #90c0f7;
+    color: #002e5c;
+}
+
+
+
+=======
+>>>>>>> 5e085fd831cde74431a314b458a49ae861b2b87c
+
